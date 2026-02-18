@@ -1,8 +1,8 @@
 from google import genai
-import os
+import os  # type: ignore
 
 # The client automatically looks for an environment variable named GEMINI_API_KEY
-client = genai.Client(api_key='AIzaSyBOf_bHKgvOe7RB_UTG05eXK8tlk0YWXZk')
+client = genai.Client(api_key='API_KEY')
 
 try:
     response = client.models.generate_content(  # type: ignore
